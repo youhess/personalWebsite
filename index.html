@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <!-- <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"> -->
+
+    <link rel="stylesheet" href="./assets/style/style.css" />
+
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!-- header and navigation -->
+
+    <div class="header" id="header">
+      <nav class="nav container">
+        <!-- 设置logo  -->
+        <a href="#" class="nav__logo">陈振迪</a>
+        <!-- 设置选项菜单 -->
+        <div class="nav__menu" id="nav__menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link"><i class="uil uil-estate nav__icon"></i>主页</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i>关于</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link"><i class="uil uil-file nav__icon"></i>技能</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link"><i class="uil uil-briefcase-alt nav__icon"></i>services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link"><i class="uil uil-scenery nav__icon"></i>Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i>联系我</a>
+            </li>
+          </ul>
+          <i class="uil uil-multiply nav__close" id="nav__close"></i>
+        </div>
+        <!-- 主题变换按钮 -->
+        <div class="nav__toggle" id="nav__toggle">
+          <i class="uil uil-bars"></i>
+        </div>
+      </nav>
+    </div>
+    <!-- main  -->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <!-- 新窗口中打开网页 -->
+              <a href="" class="home__social-icon" target="_blank">
+                <i class="uil uil-link"></i>
+              </a>
+              <a href="" class="home__social-icon">
+                <i class="uil uil-dribbble"></i>
+              </a>
+              <a href="https://github.com/youhess" class="home__social-icon">
+                <i class="uil uil-github-alt"></i>
+              </a>
+            </div>
+            <div class="home_img">
+              <svg class="home__blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M47,-69.8C62.1,-63.5,76.2,-52.4,82.4,-37.9C88.7,-23.4,87.2,-5.5,84.3,11.8C81.4,29.2,77.1,46.1,67.3,59.5C57.5,72.8,42.3,82.6,26.6,84.4C10.9,86.1,-5.4,79.8,-22.3,75.2C-39.3,70.6,-57,67.7,-68.3,57.6C-79.6,47.5,-84.6,30.2,-85.3,13.3C-86.1,-3.5,-82.7,-19.9,-75.5,-33.9C-68.2,-47.9,-56.9,-59.5,-43.7,-66.6C-30.5,-73.7,-15.2,-76.2,0.4,-76.8C16,-77.4,32,-76,47,-69.8Z"
+                    transform="translate(100 100)"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M47,-69.8C62.1,-63.5,76.2,-52.4,82.4,-37.9C88.7,-23.4,87.2,-5.5,84.3,11.8C81.4,29.2,77.1,46.1,67.3,59.5C57.5,72.8,42.3,82.6,26.6,84.4C10.9,86.1,-5.4,79.8,-22.3,75.2C-39.3,70.6,-57,67.7,-68.3,57.6C-79.6,47.5,-84.6,30.2,-85.3,13.3C-86.1,-3.5,-82.7,-19.9,-75.5,-33.9C-68.2,-47.9,-56.9,-59.5,-43.7,-66.6C-30.5,-73.7,-15.2,-76.2,0.4,-76.8C16,-77.4,32,-76,47,-69.8Z"
+                    transform="translate(100 100)"
+                  />
+                  <image class="home__blob-img" x="15" y="23" xlink:href="./assets/images/profil.jpg" />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <div class="home__title">你好！这里是陈振迪</div>
+              <div class="home__subtitle">初级前端工程师</div>
+              <p class="home__description">2021年毕业于浙江理工大学科技与艺术学院，计算机科学与技术专业。</p>
+              <a href="#contact" class="button button--flex home__link"> 联系我<i class="uil uil-envelope-send button-icon"></i> </a>
+              <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                  <i class="uil uil-mouse home__scroll-mouse"></i>
+                  <span class="home__scroll-name">向下滑动</span>
+                  <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="about section" id="about">
+        <h2 class="section__title">关于我</h2>
+        <span class="section__subtitle">个人简介</span>
+        <div class="about__container container grid">
+          <img src="./assets/images/about.jpg" alt="" class="about__img" />
+          <div class="about__data">
+            <p class="about__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores id eum modi velit facilis natus provident nemo mollitia nam iste!</p>
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">08+</span>
+                <span class="about__info-name">年<br />工作经验</span>
+              </div>
+              <div>
+                <span class="about__info-title">08+</span>
+                <span class="about__info-name">年<br />工作经验</span>
+              </div>
+              <div>
+                <span class="about__info-title">08+</span>
+                <span class="about__info-name">年<br />工作经验</span>
+              </div>
+            </div>
+            <div class="about__buttons">
+              <a download="" href="#" class="button button--flex"> 下载我的简历 <i class="uil uil-file-download-alt button-icon"></i> </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- skill -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title">能力</h2>
+        <span class="section__subtitle">我所熟悉了解的技能</span>
+        <div class="skills__container container grid">
+         
+            <!-- skills1 -->
+            <div class="skills__content skills__open">
+              <!-- 技能bar可收缩 -->
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills-icon"></i>
+                <div>
+                  <h1 class="skills__titles">前端技术向</h1>
+                </div>
+                <i class="uil uil-arrow-left skills-arrow"></i>
+              </div>
+              <!-- 下拉列表内容 -->
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills_number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__html"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">CSS</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__css"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JS</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__js"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JQuery</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__jq"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Bootstrap</h3>
+                    <span class="skills_number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__bs"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VUE</h3>
+                    <span class="skills_number">65%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__vue"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+              </div>
+            </div>
+       
+        
+            <!-- skills2 -->
+            <div class="skills__content skills__close">
+              <!-- 技能bar可收缩 -->
+              <div class="skills__header">
+                <i class="uil uil-servers skills-icon"></i>
+                <div>
+                  <h1 class="skills__titles">后端技术向</h1>
+                </div>
+                <i class="uil uil-arrow-left skills-arrow"></i>
+              </div>
+              <!-- 下拉列表内容 -->
+              <div class="skills__list  grid  ">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">JAVA</h3>
+                    <span class="skills_number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__java"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Node.js</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__node"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MYSQL</h3>
+                    <span class="skills_number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__mysql"> </span>
+                  </div>
+                </div>
+
+                <!-- ------------------------- -->
+              </div>
+            </div>
+          
+         
+            <!-- skills3 -->
+            <div class="skills__content skills__close  ">
+              <!-- 技能bar可收缩 -->
+              <div class="skills__header">
+                <i class="uil uil-brightness-plus skills-icon"></i>
+                <div>
+                  <h1 class="skills__titles">其他</h1>
+                </div>
+                <i class="uil uil-arrow-left skills-arrow"></i>
+              </div>
+              <!-- 下拉列表内容 -->
+              <div class="skills__list grid   ">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">英语</h3>
+                    <span class="skills_number">75%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <span class="skills__percentage skills__english"> </span>
+                  </div>
+                </div>
+                <!-- ------------------------- -->
+             
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">PhotoShop</h3>
+                      <span class="skills_number">40%</span>
+                    </div>
+                    <div class="skills__bar">
+                      <span class="skills__percentage skills__ps"> </span>
+                    </div>
+                  </div>
+                  <!-- ------------------------- -->
+              
+                    <div class="skills__data">
+                      <div class="skills__titles">
+                        <h3 class="skills__name">摄影</h3>
+                        <span class="skills_number">75%</span>
+                      </div>
+                      <div class="skills__bar">
+                        <span class="skills__percentage skills__photograph"> </span>
+                      </div>
+                    </div>
+                    <!-- ------------------------- -->
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+        </div>
+      </section>
+
+
+      <!-- qualification -->
+      <section class="qualification section">
+          <h2 class="section__title">qualification</h2>
+          <span class="section__subtitle">my personal journey</span>
+          <div class="qualification__container container">
+            <div class="qualification__tabs">
+              <div class="qualification__button button--flex active">
+                <i class="uil uil-graduation-cap qualification__icon "></i>
+                学历
+              </div>
+              <div class="qualification__button button--flex">
+                <i class="uil uil-constructor qualification__icon"></i>
+                工作经历
+              </div>
+            </div>
+            <div class="qualification__sections">
+              <div class="qualification__content selected  " data-content id="education">
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle">placeplace</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+
+                
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle">placeplace</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle">placeplace</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+
+
+              </div>
+              <!-- 工作经历 -->
+              <div class="qualification__content" data-content id="work">
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle">placeplace</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle"></span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+
+                <!-- /////////////////////////////////////////// -->
+                <div class="qualification__data">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">computer<br>Engineer</h3>
+                    <span class="qualification__subtitle">placeplace</span>
+                    <div class="qualification__calendar">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017~2021
+                    </div>
+                  </div>
+                  
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+      </section>
+      <!--services -->
+      <section class="services section" id="services">
+        <h2 class="section__title">Services</h2>
+        <span class="section__subtitle">what i offer</span>
+
+        <div class="services__container container grid">
+          <div class="services__content">
+            <div>
+              <i class="uil uil-grid services__icon"></i>
+              <h3 class="services__title">Ui/Ux <br> Designer</h3>
+            </div>
+            <span class="button button--flex button--small button--link services__button">
+              ViewMore
+              <i class="uil uil-arrow-circle-right button__icon"></i>
+            </span>
+          </div>
+        </div>
+
+      </section>
+    </main>
+    <!-- jQuery库文件的路径不对，检查文件路径是否正确一般就能解决该错误 或者js文件提前 -->
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
